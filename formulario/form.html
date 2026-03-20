@@ -1,0 +1,78 @@
+<!DOCTYPE encoding="UTF-8" html>
+<html lang="es">
+  <body>
+    <title>Formulario Academico</title>
+    <h1>Formulario Academico</h1><br>
+
+    <form>
+      <fieldset>
+        <legend>Información personal:</legend>
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre" style="width: 220px"><br><br>
+        <label for="correo">Correo Electronico:</label>
+        <input type="email" id="correo" name="correo" style="width: 200px"><br><br>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" style="width: 40px"><br><br>
+        <label for="nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="nacimiento" name="nacimiento" style="width: 100px"><br><br>
+      </fieldset><br>
+
+      <fieldset>
+        <legend>Información académica:</legend>
+        <label for="semestre">Semestre actual:</label>
+        <select name="semestre" id="semestre">
+          <option value="1">Primero</option>
+          <option value="2">Segundo</option>
+          <option value="3">Tercero</option>
+          <option value="4">Cuarto</option>
+          <option value="5">Quinto</option>
+        </select><br>
+
+        <label>Jornada de estudio:</label><br>
+        <input type="radio" id="dia" name="dia_option" value="Diurna">
+        <label for="dia">Diurna</label><br>
+        <input type="radio" id="noche" name="noche_option" value="Vespertina">
+        <label for="noche">Vespertina</label><br>
+      </fieldset><br>
+
+      <fieldset>
+        <legend>Tecnologías de interés</legend>
+        <input type="checkbox" id="opt1" name="opt1" value="Programación">
+        <label for="opt1">Programación</label><br>
+        <input type="checkbox" id="opt2" name="opt2" value="Programación Orientada a Objetos">
+        <label for="opt2">Programación Orientada a Objetos</label><br>
+        <input type="checkbox" id="opt3" name="opt3" value="Diseño de Base de Datos">
+        <label for="opt3">Diseño de Base de Datos</label><br>
+        <input type="checkbox" id="opt4" name="opt4" value="Programación Componentes Web">
+        <label for="opt4">Programación Componentes Web</label><br>
+        <input type="checkbox" id="opt5" name="opt5" value="Aplicaciones Móviles ">
+        <label for="opt5">Aplicaciones Móviles </label><br>
+        <input type="checkbox" id="opt6" name="opt6" value="Programación Avanzada">
+        <label for="opt6">Programación Avanzada</label><br>
+      </fieldset><br>
+
+      <fieldset>
+        <legend>Lenguaje de programación favorito</legend>
+        <label for="lang">Elija su lenguaje favorito:</label>
+        <input list="langs" name="lang" id="lang">
+        <datalist id="langs">
+          <option value="Java">
+          <option value="Python">
+          <option value="JavaScript">
+          <option value="C#">
+          <option value="C++">
+          <option value="PHP">
+          <option value="HTML">
+        </datalist>
+      </fieldset><br>
+
+      <fieldset>
+        <legend>Expectativas del taller</legend>
+        <textarea id="expectativas" name="expectativas" rows="4" cols="50"></textarea>
+      </fieldset><br>
+
+      <input type="submit" value="Enviar">
+      <input type="button" value="Limpiar">
+    </form>
+  </body>
+</html>
