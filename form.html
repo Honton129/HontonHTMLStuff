@@ -2,9 +2,18 @@
 <html lang="es">
   <head>
 		<style>
+      	@font-face {
+					font-family: "VCR";
+					src: url("res/fonts/vcr.ttf");
+				}
 				body {
+					font-family: "VCR", sans-serif;
+					background-image: url("res/img/bg.png");
+					background-size: cover;
+					background-repeat: repeat;
 					margin: 0;
   				padding: 0;
+					height: 100vh;
 				}
       	ul {
 					list-style-type: none;
@@ -27,15 +36,15 @@
 
   <body>
 		<ul>
-			<li><a href="/HontonHTMLStuff/index.html">Inicio</a></li>
-			<li><a href="/HontonHTMLStuff/socials.html">Redes Sociales</a></li>
-			<li><a href="/HontonHTMLStuff/formulario/form.html">Formulario</a></li>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="socials.html">Redes Sociales</a></li>
+			<li><a href="form.html">Formulario</a></li>
 		</ul>
 
     <title>Formulario Academico</title>
     <h1>Formulario Academico</h1><br>
 
-    <form action="/HontonHTMLStuff/index.html">
+    <form action="index.html">
       <fieldset>
         <legend>Información personal:</legend>
         <label for="nombre">Nombre Completo:</label>
