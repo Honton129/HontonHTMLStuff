@@ -8,4 +8,12 @@
 
 body {
   font-family: "VCR", "Calibri"; /* Si no existe VCR, usar Calibri */
+
+  /* Definir el fondo y su estilo */
+  background-image: none;
+
+  /* Odio los margins y paddings automaticos */
+  margin: 0;
+  padding: 0;
+  height: 100vh;
 }
