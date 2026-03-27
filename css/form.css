@@ -1,0 +1,11 @@
+/* El estilo del formulario */
+@font-face { /* Creamos un font personalizado */
+  font-family: "VCR";
+  src: url("../assets/vcr.ttf") format('truetype');
+  font-weight: normal;
+	font-style: normal;
+}
+
+body {
+  font-family: "VCR", "Calibri"; /* Si no existe VCR, usar Calibri */
+}
