@@ -11,9 +11,95 @@ body {
 
   /* Definir el fondo y su estilo */
   background-image: none;
+  align-content: center;
 
   /* Odio los margins y paddings automaticos */
   margin: 0;
   padding: 0;
   height: 100vh;
+}
+
+.text-general {
+  font-style: italic;
+  font-weight: normal;
+  text-shadow: 1px 1px lightgrey;
+}
+
+#info_legend {
+  font-weight: bold;
+  text-shadow: 1px 1px lightgrey;
+}
+
+#info_box {
+  border-radius: 5px 5px 5px 5px;
+  background: gray;
+  width: 400px;
+}
+
+#nombre_label {
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 16px;
+}
+
+#correo_label {
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 16px;
+}
+
+#edad_label {
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 16px;
+}
+
+#nacimiento_label {
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 16px;
+}
+
+#acad_box {
+  border-radius: 5px 5px 5px 5px;
+  background: gray;
+  width: 400px;
+}
+
+#acad_legend {
+  font-weight: bold;
+  text-shadow: 1px 1px lightgrey;
+}
+
+#tec_legend {
+  font-weight: bold;
+  text-shadow: 1px 1px lightgrey;
+}
+
+#tec_box {
+  border-radius: 5px 5px 5px 5px;
+  background: gray;
+  width: 400px;
+}
+
+#lang_legend {
+  font-weight: bold;
+  text-shadow: 1px 1px lightgrey;
+}
+
+#lang_box {
+  border-radius: 5px 5px 5px 5px;
+  background: gray;
+  width: 400px;
+}
+
+#expectativas_legend {
+  font-weight: bold;
+  text-shadow: 1px 1px lightgrey;
+}
+
+#expectativas_box {
+  border-radius: 5px 5px 5px 5px;
+  background: gray;
+  width: 375px;
 }

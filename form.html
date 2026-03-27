@@ -18,21 +18,23 @@
     <h1>Formulario Academico</h1><br>
 
     <form action="index.html">
-      <fieldset>
-        <legend>Información personal:</legend>
-        <label for="nombre">Nombre Completo:</label>
+      <fieldset id="info_box">
+        <legend id="info_legend">Información personal:</legend><br><br>
+
+        <label for="nombre" id="nombre_label">Nombre Completo:</label>
         <input type="text" id="nombre" name="nombre" style="width: 220px"><br><br>
-        <label for="correo">Correo Electronico:</label>
+        <label for="correo" id="correo_label">Correo Electronico:</label>
         <input type="email" id="correo" name="correo" style="width: 200px"><br><br>
-        <label for="edad">Edad:</label>
+        <label for="edad" id="edad_label">Edad:</label>
         <input type="number" id="edad" name="edad" style="width: 40px"><br><br>
-        <label for="nacimiento">Fecha de nacimiento:</label>
-        <input type="date" id="nacimiento" name="nacimiento" style="width: 100px"><br><br>
+        <label for="nacimiento" id="nacimiento_label">Fecha de nacimiento:</label>
+        <input type="date" id="nacimiento" name="nacimiento" style="width: 100px"><br>
       </fieldset><br>
 
-      <fieldset>
-        <legend>Información académica:</legend>
-        <label for="semestre">Semestre actual:</label>
+      <fieldset id="acad_box">
+        <legend id="acad_legend">Información académica:</legend><br>
+
+        <label for="semestre" id="semestre_label">Semestre actual:</label>
         <select name="semestre" id="semestre">
           <option value="1">Primero</option>
           <option value="2">Segundo</option>
@@ -48,24 +50,26 @@
         <label for="noche">Vespertina</label><br>
       </fieldset><br>
 
-      <fieldset>
-        <legend>Tecnologías de interés</legend>
-        <input type="checkbox" id="opt1" name="opt1" value="Programación">
-        <label for="opt1">Programación</label><br>
+      <fieldset id="tec_box">
+        <legend id="tec_legend">Tecnologías de interés</legend><br>
+
+        <input type="checkbox" id="opt1" class="opt1" value="Programación">
+        <label for="opt1" class="text-general">Programación</label><br>
         <input type="checkbox" id="opt2" name="opt2" value="Programación Orientada a Objetos">
-        <label for="opt2">Programación Orientada a Objetos</label><br>
+        <label for="opt2" class="text-general">Programación Orientada a Objetos</label><br>
         <input type="checkbox" id="opt3" name="opt3" value="Diseño de Base de Datos">
-        <label for="opt3">Diseño de Base de Datos</label><br>
+        <label for="opt3" class="text-general">Diseño de Base de Datos</label><br>
         <input type="checkbox" id="opt4" name="opt4" value="Programación Componentes Web">
-        <label for="opt4">Programación Componentes Web</label><br>
+        <label for="opt4" class="text-general">Programación Componentes Web</label><br>
         <input type="checkbox" id="opt5" name="opt5" value="Aplicaciones Móviles ">
-        <label for="opt5">Aplicaciones Móviles </label><br>
+        <label for="opt5" class="text-general">Aplicaciones Móviles </label><br>
         <input type="checkbox" id="opt6" name="opt6" value="Programación Avanzada">
-        <label for="opt6">Programación Avanzada</label><br>
+        <label for="opt6" class="text-general">Programación Avanzada</label><br>
       </fieldset><br>
 
-      <fieldset>
-        <legend>Lenguaje de programación favorito</legend>
+      <fieldset id="lang_box">
+        <legend id="lang_legend">Lenguaje de programación favorito</legend><br>
+
         <label for="lang">Elija su lenguaje favorito:</label>
         <input list="langs" name="lang" id="lang">
         <datalist id="langs">
@@ -79,8 +83,8 @@
         </datalist>
       </fieldset><br>
 
-      <fieldset>
-        <legend>Expectativas del taller</legend>
+      <fieldset id="expectativas_box">
+        <legend id="expectativas_legend">Expectativas del taller</legend><br>
         <textarea id="expectativas" name="expectativas" rows="4" cols="50"></textarea>
       </fieldset><br>
 
