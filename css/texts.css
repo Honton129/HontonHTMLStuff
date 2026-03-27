@@ -1,0 +1,26 @@
+/* Todo esto son puras configuraciones de texto */
+/* Nada tan importante */
+.center {
+  color: #333333;
+  align-content: center;
+  text-align: center;
+}
+.center-bottom {
+  align-content: center;
+  text-align: center;
+}
+.center-title {
+  color: black;
+  text-align: center;
+  font-size: 26px;
+}
+.center-text {
+  color: black;
+  text-align: center;
+  font-size: 22px;
+}
+.links {
+  color :black;
+  text-align: center;
+  font-size: 32px;
+}

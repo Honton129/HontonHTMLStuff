@@ -1,0 +1,40 @@
+/* El estilo base de toda la pagina */
+@font-face { /* Creamos un font personalizado */
+  font-family: "VCR";
+  src: url("../assets/vcr.ttf") format('truetype');
+  font-weight: normal;
+	font-style: normal;
+}
+
+body {
+  font-family: "VCR", "Calibri"; /* Si no existe VCR, usar Calibri */
+
+  /* Definir el fondo y su estilo */
+  background-image: url("../assets/bg.png");
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+
+  /* Odio los margins y paddings automaticos */
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+/* Cosas para la barra de navegación */
+ul { /* La barra como tal */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  display: flex;
+}
+ul li a { /* Opción */
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ul li a:hover { /* Opción con cursor encima */
+  background-color: #333333;
+}
