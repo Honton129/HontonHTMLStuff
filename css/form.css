@@ -1,17 +1,35 @@
 /* El estilo del formulario */
-@font-face { /* Creamos un font personalizado */
-  font-family: "VCR";
-  src: url("../assets/vcr.ttf") format('truetype');
-  font-weight: normal;
-	font-style: normal;
+
+/* Clases de la fuente de Google Fonts */
+.rowdies-light {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.rowdies-regular {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rowdies-bold {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h1 {
+  text-shadow: 1px 1px #959595;
+
+  /* Centrar todo horizontalmente */
+  justify-content: center;
+  display: flex;
 }
 
 body {
-  font-family: "VCR", "Calibri"; /* Si no existe VCR, usar Calibri */
-
   /* Definir el fondo y su estilo */
-  background-image: none;
-  align-content: center;
+  background-color: #666666;
 
   /* Odio los margins y paddings automaticos */
   margin: 0;
@@ -19,15 +37,21 @@ body {
   height: 100vh;
 }
 
-.text-general {
+.text-general { /* Hago que todo los textos esten en italico y normales con una sombra de 1x1 gris claro*/
   font-style: italic;
-  font-weight: normal;
-  text-shadow: 1px 1px lightgrey;
+  font-weight: bold;
+  text-shadow: 1px 1px gray;
 }
+
+/* Estilo de cajas */
 
 #info_legend {
   font-weight: bold;
-  text-shadow: 1px 1px lightgrey;
+  text-shadow: 1px 1px gray;
+}
+
+#info_legend::before {
+  content: "ℹ️ "
 }
 
 #info_box {
@@ -55,9 +79,19 @@ body {
 }
 
 #nacimiento_label {
+  text-shadow: 1px 1px gray;
   font-weight: bolder;
   font-style: italic;
   font-size: 16px;
+}
+
+#acad_legend {
+  font-weight: bold;
+  text-shadow: 1px 1px gray;
+}
+
+#acad_legend::before {
+  content: "🏫 "
 }
 
 #acad_box {
@@ -66,14 +100,19 @@ body {
   width: 400px;
 }
 
-#acad_legend {
-  font-weight: bold;
-  text-shadow: 1px 1px lightgrey;
+#semestre {
+  width: 110px;
+  font-style: italic;
+  text-shadow: 1px 1px gray;
 }
 
 #tec_legend {
   font-weight: bold;
-  text-shadow: 1px 1px lightgrey;
+  text-shadow: 1px 1px gray;
+}
+
+#tec_legend::before {
+  content: "💻 "
 }
 
 #tec_box {
@@ -84,7 +123,11 @@ body {
 
 #lang_legend {
   font-weight: bold;
-  text-shadow: 1px 1px lightgrey;
+  text-shadow: 1px 1px gray;
+}
+
+#lang_legend::before {
+  content: "🚩 "
 }
 
 #lang_box {
@@ -93,13 +136,62 @@ body {
   width: 400px;
 }
 
+#lang {
+  text-shadow: 1px 1px gray;
+}
+
 #expectativas_legend {
   font-weight: bold;
-  text-shadow: 1px 1px lightgrey;
+  text-shadow: 1px 1px gray;
+}
+
+#expectativas_legend::before {
+  content: "🗳️ "
 }
 
 #expectativas_box {
   border-radius: 5px 5px 5px 5px;
   background: gray;
   width: 375px;
+}
+
+/* Para mantener el orden, pondre todo lo que modifique los campos aqui. */
+
+fieldset {
+  font-weight: bolder;
+  text-shadow: 1px 1px gray;
+
+  /* Aunque tenga el margin general en 0, esto de alguna manera centra los fieldset */
+  margin: auto;
+}
+
+legend {
+  font-weight: bolder;
+  text-shadow: 1px 1px gray;
+}
+
+select, datalist, input { /* Descubri que puedo usar commas y juntar varias clases en una */
+  border: 2px solid lightgrey;
+  text-shadow: 1px 1px gray;
+  background: #999999;
+  font-weight: bolder;
+}
+
+#button_enviar, #button_limpiar {
+  margin-right: 20px; /* Les damos una separación a los botones */
+
+  /* Hacemos mas grandes los botones */
+  font-size: large;
+  height: 2em; /* #em significa que sea 5 veces mas grande */
+  width: 5em;
+}
+
+#buttons_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+select:hover, select:focus, datalist:hover, datalist:focus, input:hover, input:focus, input:checked {
+  background: #888888;
 }

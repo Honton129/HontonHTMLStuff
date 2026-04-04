@@ -3,75 +3,81 @@
   <head>
     <link rel="stylesheet" href="css/nav.css">
 		<link rel="stylesheet" href="css/form.css">
-		<link rel="stylesheet" href="css/texts.css">
     <link rel="icon" href="assets/icon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <title>Formulario Academico</title>
   </head>
 
   <body>
-		<ul>
+		<ul class="rowdies-bold">
 			<li><a href="index.html">Inicio</a></li>
 			<li><a href="socials.html">Redes Sociales</a></li>
 			<li><a href="form.html">Formulario</a></li>
 		</ul>
 
-    <title>Formulario Academico</title>
-    <h1>Formulario Academico</h1><br>
+    <div>
+      <h1 class="rowdies-bold">Formulario Academico</h1><br>
+    </div>
 
     <form action="index.html">
-      <fieldset id="info_box">
-        <legend id="info_legend">Información personal:</legend><br><br>
+      <fieldset id="info_box" class="rowdies-bold">
+        <legend id="info_legend" class="rowdies-bold">Información personal:</legend><br><br>
 
         <label for="nombre" id="nombre_label">Nombre Completo:</label>
-        <input type="text" id="nombre" name="nombre" style="width: 220px"><br><br>
+        <input type="text" id="nombre" name="nombre" style="width: 229px" class="rowdies-regular"><br><br>
         <label for="correo" id="correo_label">Correo Electronico:</label>
-        <input type="email" id="correo" name="correo" style="width: 200px"><br><br>
+        <input type="email" id="correo" name="correo" style="width: 200px" class="rowdies-regular"><br><br>
         <label for="edad" id="edad_label">Edad:</label>
-        <input type="number" id="edad" name="edad" style="width: 40px"><br><br>
+        <input type="number" id="edad" name="edad" style="width: 45px" class="rowdies-regular"><br><br>
         <label for="nacimiento" id="nacimiento_label">Fecha de nacimiento:</label>
-        <input type="date" id="nacimiento" name="nacimiento" style="width: 100px"><br>
+        <input type="date" id="nacimiento" name="nacimiento" style="width: 110px" class="rowdies-regular"><br>
       </fieldset><br>
 
-      <fieldset id="acad_box">
-        <legend id="acad_legend">Información académica:</legend><br>
+      <fieldset id="acad_box" class="rowdies-bold">
+        <legend id="acad_legend" class="rowdies-bold">Información académica:</legend><br>
 
-        <label for="semestre" id="semestre_label">Semestre actual:</label>
-        <select name="semestre" id="semestre">
-          <option value="1">Primero</option>
-          <option value="2">Segundo</option>
-          <option value="3">Tercero</option>
-          <option value="4">Cuarto</option>
-          <option value="5">Quinto</option>
+        <label for="semestre" id="semestre_label" class="rowdies-bold">Semestre actual:</label>
+        <select name="semestre" id="semestre" class="rowdies-regular">
+          <option value="1">Primero 1️⃣</option>
+          <option value="2">Segundo 2️⃣</option>
+          <option value="3">Tercero 3️⃣</option>
+          <option value="4">Cuarto 4️⃣</option>
+          <option value="5">Quinto 5️⃣</option>
         </select><br>
 
-        <label>Jornada de estudio:</label><br>
+        <label class="rowdies-bold">Jornada de estudio:</label><br>
         <input type="radio" id="dia" name="dia_option" value="Diurna">
-        <label for="dia">Diurna</label><br>
+        <label for="dia" class="rowdies-regular">Diurna</label><br>
         <input type="radio" id="noche" name="noche_option" value="Vespertina">
-        <label for="noche">Vespertina</label><br>
+        <label for="noche" class="rowdies-regular">Vespertina</label><br>
       </fieldset><br>
 
-      <fieldset id="tec_box">
-        <legend id="tec_legend">Tecnologías de interés</legend><br>
+      <fieldset id="tec_box" class="rowdies-bold">
+        <legend id="tec_legend" class="rowdies-bold">Tecnologías de interés</legend><br>
 
         <input type="checkbox" id="opt1" class="opt1" value="Programación">
-        <label for="opt1" class="text-general">Programación</label><br>
+        <label for="opt1" class="rowdies-regular">Programación</label><br>
         <input type="checkbox" id="opt2" name="opt2" value="Programación Orientada a Objetos">
-        <label for="opt2" class="text-general">Programación Orientada a Objetos</label><br>
+        <label for="opt2" class="rowdies-regular">Programación Orientada a Objetos</label><br>
         <input type="checkbox" id="opt3" name="opt3" value="Diseño de Base de Datos">
-        <label for="opt3" class="text-general">Diseño de Base de Datos</label><br>
+        <label for="opt3" class="rowdies-regular">Diseño de Base de Datos</label><br>
         <input type="checkbox" id="opt4" name="opt4" value="Programación Componentes Web">
-        <label for="opt4" class="text-general">Programación Componentes Web</label><br>
+        <label for="opt4" class="rowdies-regular">Programación Componentes Web</label><br>
         <input type="checkbox" id="opt5" name="opt5" value="Aplicaciones Móviles ">
-        <label for="opt5" class="text-general">Aplicaciones Móviles </label><br>
+        <label for="opt5" class="rowdies-regular">Aplicaciones Móviles </label><br>
         <input type="checkbox" id="opt6" name="opt6" value="Programación Avanzada">
-        <label for="opt6" class="text-general">Programación Avanzada</label><br>
+        <label for="opt6" class="rowdies-regular">Programación Avanzada</label><br>
       </fieldset><br>
 
-      <fieldset id="lang_box">
-        <legend id="lang_legend">Lenguaje de programación favorito</legend><br>
+      <fieldset id="lang_box" class="rowdies-bold">
+        <legend id="lang_legend" class="rowdies-bold">Lenguaje de programación favorito</legend><br>
 
-        <label for="lang">Elija su lenguaje favorito:</label>
-        <input list="langs" name="lang" id="lang">
+        <label for="langs" class="rowdies-regular">Elija su lenguaje favorito:</label>
+        <input list="langs" name="lang" id="lang" style="width: 110px" class="rowdies-light">
         <datalist id="langs">
           <option value="Java">
           <option value="Python">
@@ -83,13 +89,15 @@
         </datalist>
       </fieldset><br>
 
-      <fieldset id="expectativas_box">
-        <legend id="expectativas_legend">Expectativas del taller</legend><br>
+      <fieldset id="expectativas_box" class="rowdies-bold">
+        <legend id="expectativas_legend" class="rowdies-bold">Expectativas del taller</legend><br>
         <textarea id="expectativas" name="expectativas" rows="4" cols="50"></textarea>
       </fieldset><br>
 
-      <input type="submit" value="Enviar">
-      <input type="button" value="Limpiar">
+      <div id="buttons_div" class="rowdies-bold">
+        <input type="submit" id="button_enviar" value="Enviar">
+        <input type="button" id="button_limpiar" value="Limpiar">
+      </div>
     </form>
   </body>
 </html>
